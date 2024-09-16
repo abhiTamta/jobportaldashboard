@@ -3,17 +3,13 @@ import { SiSimplelogin } from "react-icons/si";
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { login } from "../store/authLoginReducer";
-import { useState } from "react";
 
 const Login = () => {
-  const [userName, setUserName] = useState('');
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const onFinish = (value)=>{
-    console.log(value)
-    setUserName(value.userName)
-    dispatch(login(value.userName))
+    dispatch(login(value))
     navigate('/dashboard');
   }
   const onFinishFailed = (errorInfo) =>{

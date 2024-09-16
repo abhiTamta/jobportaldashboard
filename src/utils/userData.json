@@ -1,0 +1,25 @@
+{
+    "userData" : [
+        {
+            "id" : "1,",
+            "userName" : "abhinayTamta",
+            "userFullName" : "Abhinay Tamta",
+            "userEmail" : "abhinay.tamta@gmail.com",
+            "userPassword" : "123456'"
+        },
+        {
+            "id" : "2,",
+            "userName" : "ajay",
+            "userFullName" : "ajay Tamta",
+            "userEmail" : "ajay@gmail.com",
+            "userPassword" : "123456'"
+        },
+        {
+            "id" : "3,",
+            "userName" : "vijay",
+            "userFullName" : "Vijay Tamta",
+            "userEmail" : "vijay@gmail.com",
+            "userPassword" : "123456'"
+        }
+    ]
+}
