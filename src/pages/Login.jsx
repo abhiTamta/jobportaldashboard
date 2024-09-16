@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const onFinish = (value)=>{
-    dispatch(login(value))
+    dispatch(login({userName : value.userName, usrPassword : value.userPassword}))
     navigate('/dashboard');
   }
   const onFinishFailed = (errorInfo) =>{
