@@ -10,9 +10,9 @@ const pageRouter = createBrowserRouter([
     element: <Login />,
   },
   {
-    path :"/dashboard",
+    path: "/dashboard",
     // element : <Dashboard />
-    element : (<ProtectedRoute element={<Dashboard />} />)
+    element: (<ProtectedRoute element={<Dashboard />} />)
   }
 ]);
 

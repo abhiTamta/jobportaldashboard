@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 
 const ProtectedRoute = ({ element }) => {
   const user = useSelector((state) => state.auth.user);
-  return user ? element : <Navigate to="/" />;
+  return user ? element : <Navigate to="/auth/login" />;
 };
 
 export default ProtectedRoute;
