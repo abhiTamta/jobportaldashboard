@@ -22,7 +22,7 @@ const items = [
 ];
 const UserProfile = () => {
     return (
-        <Dropdown menu={{ items }} className='rounded-none'>
+        <Dropdown menu={{ items }} placement="bottom" className='rounded-none'>
             {/* <a onClick={(e) => e.preventDefault()}></a> */}
             <Button shape='circle' className='p-0 shadow-none border-none'>
                 <Avatar src={profileIcon} />
