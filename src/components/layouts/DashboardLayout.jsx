@@ -2,12 +2,16 @@ import React from 'react'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
 import { Outlet } from 'react-router-dom'
+import Sidebar from '../sidebar/Sidebar'
 
 const DashboardLayout = () => {
   return (
-    <div className='w-full h-screen relative'>
+    <div className='w-full h-screen relative bg-slate-200'>
         <Header />
-        <Outlet />
+        <div className="w-full flex">
+          <Sidebar />
+          <Outlet />
+        </div>
         <Footer />        
     </div>
   )
