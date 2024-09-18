@@ -8,7 +8,7 @@ import { Space } from 'antd';
 const Header = () => {
 
   return (
-    <nav className='w-full flex py-3 px-5 shadow bg-white'>
+    <nav className='w-full flex py-3 px-5 shadow bg-slate-700'>
       <div className="headerTopSidebar w-2/12">
         <NavBrand />
       </div>
