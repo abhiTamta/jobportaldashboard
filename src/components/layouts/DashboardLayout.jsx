@@ -6,13 +6,17 @@ import Sidebar from '../sidebar/Sidebar'
 
 const DashboardLayout = () => {
   return (
-    <div className='w-full h-screen relative bg-slate-200'>
-        <Header />
-        <div className="w-full flex">
+    <div className='w-full h-screen overflow-hidden relative bg-slate-200'>
+      <Header />
+      <div className="w-full h-[92vh] flex">
+        <div className="siderBarNav bg-white w-2/12">
           <Sidebar />
-          <Outlet />
         </div>
-        <Footer />        
+        <div className="dashboardContent w-10/12 overflow-y-auto">
+          <Outlet />
+          <Footer />
+        </div>
+      </div>
     </div>
   )
 }
