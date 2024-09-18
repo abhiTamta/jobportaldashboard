@@ -1,16 +1,9 @@
 import { Button, Form, Input } from "antd";
 import { SiSimplelogin } from "react-icons/si";
-import { useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
-import { login } from "../store/authLoginReducer";
 
 const Login = () => {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
-
   const onFinish = (value)=>{
-    dispatch(login({userName : value.userName, usrPassword : value.userPassword}))
-    navigate('/dashboard');
+    console.log(value)
   }
   const onFinishFailed = (errorInfo) =>{
     console.log(errorInfo)

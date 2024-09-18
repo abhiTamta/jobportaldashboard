@@ -1,8 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
 import Login from "../pages/Login";
 import Dashboard from "../pages/Dashboard";
-import ProtectedRoute from "./ProtectedRoute";
 import DashboardLayout from "../components/layouts/DashboardLayout";
 
 const pageRouter = createBrowserRouter([
@@ -16,7 +14,7 @@ const pageRouter = createBrowserRouter([
     children: [
       {
         path: "",
-        element: (<ProtectedRoute element={<Dashboard />} />)
+        element: <Dashboard />
       }
     ],
   },
