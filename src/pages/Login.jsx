@@ -12,7 +12,7 @@ const Login = () => {
   return (
     <div className="w-full h-screen bg-slate-500 flex justify-center items-center">
       <div className="bg-white p-10 rounded-md shadow-md w-96">
-        <div className="flex items-center gap-2 mb-5">
+        <div className="flex items-start gap-2 mb-5">
           <SiSimplelogin size={34} />
           <div className="text-2xl font-bold uppercase text-gray-700">Login</div>
         </div>

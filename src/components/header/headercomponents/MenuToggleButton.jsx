@@ -1,10 +1,22 @@
-import { Button } from 'antd'
+import { Button } from "antd";
+import { useState } from "react";
 import { HiMenuAlt1 } from "react-icons/hi";
 
 const MenuToggleButton = () => {
-  return (
-    <Button type="button" icon={<HiMenuAlt1 className="text-slate-600" size={24} />} />
-  )
-}
+  const [menuSlideToggle, setMenuSlideToggle] = useState(false);
 
-export default MenuToggleButton
+  function menuToggleUnflod() {
+    setMenuSlideToggle(!menuSlideToggle);
+    console.log(menuSlideToggle)
+  }
+
+  return (
+    <Button
+      onClick={menuToggleUnflod}
+      type="button"
+      icon={<HiMenuAlt1 className="text-slate-300 shadow-none" size={24} />}
+    />
+  );
+};
+
+export default MenuToggleButton;

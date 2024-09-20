@@ -4,7 +4,7 @@ const Searchbar = () => {
     return (
         <Form name='search'>
             <Form.Item className='m-0'>
-                <Input.Search></Input.Search>
+                <Input.Search className='w-96'></Input.Search>
             </Form.Item>
         </Form>
     )
