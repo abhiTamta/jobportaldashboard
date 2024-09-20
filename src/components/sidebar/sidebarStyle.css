@@ -1,0 +1,6 @@
+.ant-menu {
+    width: 300px;
+}
+.ant-menu.ant-menu-inline-collapsed {
+    width: 80px;
+}
